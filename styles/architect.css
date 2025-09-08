@@ -57,7 +57,7 @@ li{
 }
 .nav-links{
     display: flex;
-    gap: 3.75px;
+    gap: 3.75rem;
     align-items: center;
 }
 .navbar, .banner{
