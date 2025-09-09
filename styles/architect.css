@@ -86,25 +86,31 @@ li{
     margin-top: 2rem;
 }
 /* header responsive */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 650px) {
     .navbar, .nav-links{
         flex-direction: column;
         align-items: flex-start;
-        margin-left: 5px;
-    }
+    } 
+    .brand-name{
+    text-align: center;
+   }
 }
 
 /* main */
 
 main{
-    max-width: 1440px;
-    margin: 0 auto;
+    
+    
 }
 .section-1{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     gap: 4.5645rem;
     margin-top: 5.3125rem;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .sec-1-main-images-grid
 {
@@ -112,35 +118,14 @@ main{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1.5rem;
-}
-.description-div{
-    display: flex;
-    align-items: center;
+    min-width: 300px;
 }
 .sec-1-main-description
 {
     max-width:  537px;
     max-height: 304px;
-}
-.image1{
-    grid-auto-rows: 1;
-    grid-column-start: 1;
-}
-.image2{
-    grid-row-start: 1;
-    grid-column-start: 2;
-}
-.image3{
-    grid-row-start: 2;
-    grid-column-start: 1;
-}
-.image4{
-    grid-row-start: 2;
-    grid-column-start: 2;
-}
-.image{
-    max-width: 342px;
-    max-height: 343px;
+    min-width: 300px;
+    
 }
 .grid-image{
     width: 100%;
@@ -150,11 +135,10 @@ main{
 }
 .sec-1-description{
     margin-top: 1.5rem;
+    
 }
-
-
 /* section-1 part */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 650px) {
     .section-1{
         flex-direction: column;
         gap: 2rem;
@@ -165,3 +149,15 @@ main{
     }
     
 }
+
+@media screen and (min-width: 650px) and (max-width: 992px) {
+    .section-1{
+        flex-direction: column;
+        gap: 2rem;
+    }
+   .sec-1-main-description{
+    text-align: center;
+   }
+}
+
+
